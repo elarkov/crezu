@@ -1,0 +1,135 @@
+.indicator {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  @include xs-block {
+    justify-content: space-between;
+  }
+  &__input {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+    width: 67px;
+    height: 8px;
+    @include xs-block {
+      min-width: 55px;
+      width: 100%;
+    }
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+  
+    // Box.
+    & + label:before {
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 67px;
+      height: 8px;
+      background: $alto;
+      @include xs-block {
+        min-width: 55px;
+        width: 100%;
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    width: 67px;
+    margin-right: 6px;
+    @include xs-block {
+      min-width: 55px;
+      width: 100%;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:nth-child(1) {
+      .indicator__input {
+        // &:hover + label:before {
+        //   background: $alto;
+        // }
+        &:checked + label:before {
+          background: $alto;
+        }
+      }
+    }
+    &:nth-child(2) {
+      .indicator__input {
+        // &:hover + label:before {
+        //   background: #e0ed48;
+        // }
+        &:checked + label:before {
+          background: #e0ed48;
+        }
+      }
+    }
+    &:nth-child(3) {
+      .indicator__input {
+        // &:hover + label:before {
+        //   background: #aadf3a;
+        // }
+        &:checked + label:before {
+          background: #aadf3a;
+        }
+      }
+    }
+    &:nth-child(4) {
+      .indicator__input {
+        // &:hover + label:before {
+        //   background: #5bb73b;
+        // }
+        &:checked + label:before {
+          background: #5bb73b;
+        }
+      }
+    }
+  }
+}
+
+.indicator-score {
+  position: absolute;
+  top: -100%;
+  span {
+    display: block;
+    position: relative;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130.9%;
+    color: #000000;
+  }
+  &--right {
+    right: 0;
+    span {
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 7px 7px 0;
+        border-color: transparent #d62f2f transparent transparent;
+      }
+    }
+  }
+  &--left {
+    left: 0;
+    span {
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7px 7px 0 0;
+        border-color: #d62f2f transparent transparent transparent;
+      }
+    }
+  }
+}

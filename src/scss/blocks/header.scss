@@ -1,0 +1,34 @@
+.main-header {
+  background: $mirage;
+  &__nav {
+    padding-top: 32px;
+    padding-bottom: 34px;
+    display: flex;
+  }
+  &__logo {
+    margin-right: auto;
+    @include xs-block {
+      margin: 0 auto;
+    }
+  }
+}
+
+.site-navigation {
+  display: flex;
+  @include xs-block {
+    display: none;
+  }
+  &__item {
+    margin-right: 35px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}

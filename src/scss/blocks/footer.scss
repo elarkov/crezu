@@ -1,0 +1,38 @@
+.footer {
+  padding: 22px 0;
+  background: $god-gray;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    @include xs-block {
+      justify-content: center;
+    }
+  }
+  &__menu {
+    @include xs-block {
+      margin-bottom: 28px;
+    }
+    a {
+      margin-right: 45px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      text-decoration: none;
+      color: $white;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__copyright {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7D7D7D;
+    @include xs-block {
+      font-size: 11px;
+    }
+  }
+}

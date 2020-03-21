@@ -1,0 +1,111 @@
+.tabs {
+  height: 260px;
+  overflow: hidden;
+  &.show-more {
+    height: auto;
+    overflow: auto;
+  }
+  &__buttons {
+    display: flex;
+    border-bottom: 1px solid $alto;
+  }
+  &__button {
+    padding: 0 21px 9px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130.9%;
+    cursor: pointer;
+    @include xs-block {
+      width: 50%;
+      padding: 0 10px 9px;
+      font-size: 14px;
+      text-align: center;
+    }
+    &--active {
+      color: $apple;
+      border-bottom: 4px solid $apple;
+    }
+  }
+  &__content {
+    display: none;
+    padding-top: 22px;
+    @include xs-block {
+      padding-top: 19px;
+    }
+    &--active {
+      display: block;
+    }
+    ul {
+      margin: 0;
+      padding-left: 15px;
+      li {
+        margin-bottom: 9px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 140%;
+        @include xs-block {
+          margin-bottom: 14px;
+          font-size: 13px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &__less {
+    position: relative;
+    display: block;
+    margin-top: 33px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130.9%;
+    text-decoration: none;
+    color: $apple;
+    @include xs-block {
+      margin-top: 25px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin-left: 9px;
+      width: 10px;
+      height: 8px;
+      background: url('../../img/chevron.png') no-repeat;
+    }
+  }
+}
+
+.tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item {
+    max-width: 380px;
+    @include sm-block {
+      width: 50%;
+    }
+    @include xs-block {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      @include xs-block {
+        margin-bottom: 0;
+      }
+    }
+    
+    h3 {
+      margin-bottom: 17px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 130.9%;
+      @include xs-block {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}

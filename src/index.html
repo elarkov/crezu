@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="main-header">
+            <div class="container main-header__container">
+                <nav class="main-header__nav">
+                    <a class="logo main-header__logo">
+                        <img src="img/logo.svg" height="22" width="80" alt="">
+                    </a>
+                    <ul class="site-navigation">
+                        <li class="site-navigation__item"><a href="#">Как это работает</a></li>
+                        <li class="site-navigation__item"><a href="#">Ответы на вопросы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main-content">
+                <div class="container main-content__container">
+                    <header class="main-content__header">
+                        <h1>We found X credit cards for you</h1>
+                        <p>We think you’ll love these cards from our partners</p>
+                    </header>
+                    <div class="cards main-content__cards">
+                        <div class="cards__item">
+                            <div class="cards-top cards__top">
+                                <div class="cards-top__img">
+                                    <img src="https://via.placeholder.com/287x179" alt="">
+                                </div>
+                                <div class="cards-top__info">
+                                    <p>Best for: Bonus Rewards</p>
+                                    <h2>Discover it® Cash Back</h2>
+                                    <div class="rating cards-top__rating">
+                                        <div class="rating__stars">
+                                            <ul class="stars">
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                            <span class="rating__num">4,8</span>
+                                        </div>
+                                        <span class="rating__text">Crezu rating</span>
+                                        <span class="rating__icon">?</span>
+                                    </div>
+                                    <a href="" class="cards-top__button">Apply Now</a>
+                                    <span class="cards-top__change">on Chase's website</span>
+                                </div>
+                            </div>
+                            <div class="cards-info cards__info">
+                                <div class="cards-info__item">
+                                    <h3>Annual Fee</h3>
+                                    <span>$0</span>
+                                </div>
+                                <div class="cards-info__item">
+                                    <h3>Rewards Rate</h3>
+                                    <span>1% - 5%</span>
+                                </div>
+                                <div class="cards-info__item">
+                                    <h3>Intro Offer</h3>
+                                    <span>Cashback Match</span>
+                                </div>
+                                <div class="cards-info__item">
+                                    <h3>Recommended Credit Score</h3>
+                                    <div class="indicator">
+                                        <div class="indicator__item">
+                                            <input id="indicator-1" class="indicator__input" type="checkbox" value="value1">
+                                            <label for="indicator-1"></label>
+                                        </div>
+                                        <div class="indicator__item">
+                                            <input id="indicator-2" class="indicator__input" type="checkbox" value="value2" checked disabled>
+                                            <label for="indicator-2"></label>
+                                        </div>
+                                        <div class="indicator__item">
+                                            <div class="indicator-score indicator-score--left">
+                                                <span>690</span>
+                                            </div>
+                                            <input id="indicator-3" class="indicator__input" type="checkbox" value="value3" checked disabled>
+                                            <label for="indicator-3"></label>
+                                        </div>
+                                        <div class="indicator__item">
+                                            <div class="indicator-score indicator-score--right">
+                                                <span>850</span>
+                                            </div>
+                                            <input id="indicator-4" class="indicator__input" type="checkbox" value="value4" checked disabled>
+                                            <label for="indicator-4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs cards__tabs js-tabs">
+
+                                <ul class="tabs__buttons">
+                                    <li class="tabs__button tabs__button--active js-tabs__button" data-tab-index="1">Pros & Cons</li>
+                                    <li class="tabs__button js-tabs__button" data-tab-index="2">Requirements</li>
+                                </ul>
+                                <div class="tabs__content tabs__content--active js-tabs__content" data-tab-index="1">
+                                    <div class="tabs-list">
+                                        <div class="tabs-list__item">
+                                            <h3>Pros</h3>
+                                            <ul>
+                                                <li>Cash back match at the end of your first year</li>
+                                                <li>Bonus cash back categories</li>
+                                                <li>No annual fee</li>
+                                                <li>Intro APR period on Purchases and Balance Transfers</li>
+                                                <li>Cash back match at the end of your first year</li>
+                                                <li>Bonus cash back categories</li>
+                                                <li>No annual fee</li>
+                                                <li>Intro APR period on Purchases and Balance Transfers</li>
+                                                <li>Cash back match at the end of your first year</li>
+                                                <li>Bonus cash back categories</li>
+                                                <li>No annual fee</li>
+                                                <li>Intro APR period on Purchases and Balance Transfers</li>
+                                            </ul>
+                                        </div>
+                                        <div class="tabs-list__item">
+                                            <h3>Cons</h3>
+                                            <ul>
+                                                <li>Slightly less merchant acceptance for Discover in US - acceptance outside of US can be an issue</li>
+                                                <li>If you value simplicity, a flat rate cash back card may be better</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__content js-tabs__content" data-tab-index="2">
+                                    <table class="table-info">
+                                        <tr>
+                                            <td>Кредитная ставка на покупки </td>
+                                            <td>259%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Кредитная ставка на наличные</td>
+                                            <td>259%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Кредитный лимит</td>
+                                            <td>до 1 000 000 $ </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Льготный период</td>
+                                            <td>120 дней</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Обслуживание</td>
+                                            <td>Первый месяц бесплатно. Следующий месяц бесплатно, если сумма покупок от 15000$. Следующий месяц 99$, если сумма покупок до 14999$ </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Перевыпуск карт</td>
+                                            <td>350$</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SMS информирование</td>
+                                            <td>Бесплатно</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Минимальный платеж</td>
+                                            <td>5%</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <a href="" class="tabs__less">Show more</a>
+                        </div>
+                        <div class="cards__item">
+                            <div class="cards-top cards__top">
+                                <div class="cards-top__img">
+                                    <img src="https://via.placeholder.com/287x179" alt="">
+                                </div>
+                                <div class="cards-top__info">
+                                    <p>Best for: Bonus Rewards</p>
+                                    <h2>Discover it® Cash Back</h2>
+                                    <div class="rating cards-top__rating">
+                                        <div class="rating__stars">
+                                            <ul class="stars">
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                            <span class="rating__num">4,8</span>
+                                        </div>
+                                        <span class="rating__text">Crezu rating</span>
+                                        <span class="rating__icon">?</span>
+                                    </div>
+                                    <a href="" class="cards-top__button">Apply Now</a>
+                                    <span class="cards-top__change">on Chase's website</span>
+                                </div>
+                            </div>
+                            <div class="cards-info cards__info">
+                                <div class="cards-info__item">
+                                    <h3>Annual Fee</h3>
+                                    <span>$0</span>
+                                </div>
+                                <div class="cards-info__item">
+                                    <h3>Rewards Rate</h3>
+                                    <span>1% - 5%</span>
+                                </div>
+                                <div class="cards-info__item">
+                                    <h3>Intro Offer</h3>
+                                    <span>Cashback Match</span>
+                                </div>
+                                <div class="cards-info__item">
+                                    <h3>Recommended Credit Score</h3>
+                                    <div class="indicator">
+                                        <div class="indicator__item">
+                                            <input id="indicator-1" class="indicator__input" type="checkbox" value="value1">
+                                            <label for="indicator-1"></label>
+                                        </div>
+                                        <div class="indicator__item">
+                                            <input id="indicator-2" class="indicator__input" type="checkbox" value="value2" checked disabled>
+                                            <label for="indicator-2"></label>
+                                        </div>
+                                        <div class="indicator__item">
+                                            <div class="indicator-score indicator-score--left">
+                                                <span>690</span>
+                                            </div>
+                                            <input id="indicator-3" class="indicator__input" type="checkbox" value="value3" checked disabled>
+                                            <label for="indicator-3"></label>
+                                        </div>
+                                        <div class="indicator__item">
+                                            <div class="indicator-score indicator-score--right">
+                                                <span>850</span>
+                                            </div>
+                                            <input id="indicator-4" class="indicator__input" type="checkbox" value="value4" checked disabled>
+                                            <label for="indicator-4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs cards__tabs js-tabs">
+
+                                <ul class="tabs__buttons">
+                                    <li class="tabs__button tabs__button--active js-tabs__button" data-tab-index="1">Pros & Cons</li>
+                                    <li class="tabs__button js-tabs__button" data-tab-index="2">Requirements</li>
+                                </ul>
+                                <div class="tabs__content tabs__content--active js-tabs__content" data-tab-index="1">
+                                    <div class="tabs-list">
+                                        <div class="tabs-list__item">
+                                            <h3>Pros</h3>
+                                            <ul>
+                                                <li>Cash back match at the end of your first year</li>
+                                                <li>Bonus cash back categories</li>
+                                                <li>No annual fee</li>
+                                                <li>Intro APR period on Purchases and Balance Transfers</li>
+                                                <li>Cash back match at the end of your first year</li>
+                                                <li>Bonus cash back categories</li>
+                                                <li>No annual fee</li>
+                                                <li>Intro APR period on Purchases and Balance Transfers</li>
+                                                <li>Cash back match at the end of your first year</li>
+                                                <li>Bonus cash back categories</li>
+                                                <li>No annual fee</li>
+                                                <li>Intro APR period on Purchases and Balance Transfers</li>
+                                            </ul>
+                                        </div>
+                                        <div class="tabs-list__item">
+                                            <h3>Cons</h3>
+                                            <ul>
+                                                <li>Slightly less merchant acceptance for Discover in US - acceptance outside of US can be an issue</li>
+                                                <li>If you value simplicity, a flat rate cash back card may be better</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__content js-tabs__content" data-tab-index="2">
+                                    <table class="table-info">
+                                        <tr>
+                                            <td>Кредитная ставка на покупки </td>
+                                            <td>259%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Кредитная ставка на наличные</td>
+                                            <td>259%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Кредитный лимит</td>
+                                            <td>до 1 000 000 $ </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Льготный период</td>
+                                            <td>120 дней</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Обслуживание</td>
+                                            <td>Первый месяц бесплатно. Следующий месяц бесплатно, если сумма покупок от 15000$. Следующий месяц 99$, если сумма покупок до 14999$ </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Перевыпуск карт</td>
+                                            <td>350$</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SMS информирование</td>
+                                            <td>Бесплатно</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Минимальный платеж</td>
+                                            <td>5%</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <a href="#" class="tabs__less">Show more</a>
+                        </div>
+                        <button class="cards__more">Show more</button>
+                    </div>
+                    
+                    <div class="text-block">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__wrapper">
+                    <div class="footer__menu">
+                        <a href="#">About Us</a>
+                        <a href="#">Partners</a>
+                        <a href="#">Lenders</a>
+                    </div>
+                    <div class="footer__copyright">© 2019 Crezu. All Rights Reserved.</div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
